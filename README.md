@@ -55,7 +55,8 @@ UNBOX   0.0351890719564886
     1. Amazon: ```sudo yum install perl-JSON```
     2. Ubuntu: ```sudo apt-get install -y libjson-perl```
 2. Run the program on your favorite dictionary
-    1. ```perl run.pl wordle_answers_plus_allowed_guesses.json > scores.tsv 2> /dev/null```
+    1. BASIC : ```perl run.pl wordle_answers_plus_allowed_guesses.json > scores.tsv 2> /dev/null```
+    2. ADVANCED: ```perl run_with_two_lists.pl wordle_answers_plus_allowed_guesses.json wordle_answers_only.json > scores_split_lists_no_repeat_letters.tsv 2> /dev/null```
 
 # WORD LISTS
 1. Based on this [sub-reddit](https://www.reddit.com/r/wordle/comments/s4tcw8/a_note_on_wordles_word_list/), here are the two lists used:
