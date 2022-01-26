@@ -7,7 +7,7 @@ use Data::Dumper;
 use lib qw(..);
 use JSON qw( );
 
-my $filename = 'words_dictionary.json';
+my $filename = $ARGV[0] || 'wordle_answers_plus_allowed_guesses.json';
 my $json_text = do {
    open(my $json_fh, "<:encoding(UTF-8)", $filename)
       or die("Can't open \"$filename\": $!\n");
