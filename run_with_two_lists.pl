@@ -18,7 +18,7 @@ my $answers_dictionary = $json->decode(read_json_file($only_answers_filename));
 my $coefficients = {
 	'G' => 0.2,
 	'Y' => 0.05,
-	'B' => 0.000000512,
+	'B' => 0.0384,
 };
 
 # First calculate the probability of each character in each position and each color
