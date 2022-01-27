@@ -56,7 +56,8 @@ EXEME   0.0249376004602957
     1. Amazon: ```sudo yum install perl-JSON```
     2. Ubuntu: ```sudo apt-get install -y libjson-perl```
 2. Run the program on your favorite dictionary
-    1. ```perl run_with_two_lists.pl wordle_answers_plus_allowed_guesses.json wordle_answers_only.json > scores_split_lists_no_repeat_letters.tsv 2> /dev/null```
+    1. PROBABILITY METHOD : ```perl run_with_two_lists.pl wordle_answers_plus_allowed_guesses.json wordle_answers_only.json > scores_split_lists_no_repeat_letters.tsv 2> /dev/null```
+    2. DISTANCE METHOD : ```perl run_distance_method.pl wordle_answers_plus_allowed_guesses.json wordle_answers_only.json > scores_split_lists_distance_method.tsv  2> /dev/null &```
 
 # WORD LISTS
 1. Based on this [sub-reddit](https://www.reddit.com/r/wordle/comments/s4tcw8/a_note_on_wordles_word_list/), here are the two lists used:
@@ -66,6 +67,7 @@ EXEME   0.0249376004602957
 # CHANGES (2022-01-27)
 ```
 1. The co-efficient for BLACK seems to be too low. On further thought, 1/26 would be the knowledge gained from a BLACK guess. So fixed that to 1/26 = 0.0384
+2. Tried out a new method based on distance between guesses and answers. Based on this, best word turned out to be : SAREE (See scores_split_lists_distance_method.tsv)
 ```
 
 # CHANGES (2022-01-26)
