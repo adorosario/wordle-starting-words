@@ -2,7 +2,7 @@
 # BACKGROUND
 This statistical algorithm attempts to find the best opening move in [Uttor](https://uttor.org/) - the Konkani version of the hit game, Wordle. It uses probabilities of various letters and also combines positional prominence (aka: Greens are more valuable than Yellows which are more valuable than Black) 
 
-TL;DR: The best starting word (based on this statistical analysis) is: *SOARE*
+TL;DR: The best starting word (based on this statistical analysis) is: *KORAT*
 
 # TOP 10 BEST OPENING WORDS
 ```
